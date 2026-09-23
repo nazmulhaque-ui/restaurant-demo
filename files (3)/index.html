@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Table — A Modern European Table (Portfolio Demo)</title>
+<meta name="description" content="Maison Table is a fictional restaurant created as a web design portfolio demo. Not a real business.">
+
+<!-- Google Fonts: Fraunces (display serif) + Karla (body sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Portfolio disclosure banner -->
+<div class="demo-banner">
+  Portfolio demo — Maison Table is a fictional restaurant created to showcase web design work.
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="logo">Maison Table</a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#reserve" class="btn btn-line nav-cta">Reserve a Table</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow">Maison Table</p>
+      <h1 class="hero-title">Where every meal<br>becomes a <em>memory.</em></h1>
+      <p class="hero-sub">Thoughtfully prepared dishes, seasonal ingredients, and an atmosphere designed for meaningful moments.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-solid">Explore Menu</a>
+        <a href="#reserve" class="btn btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="https://picsum.photos/id/292/1200/1500" alt="Plated dish at Maison Table, placeholder photography for this demo" loading="eager">
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="story" id="story">
+    <div class="story-media">
+      <img src="https://picsum.photos/id/225/1000/1200" alt="Interior dining room at Maison Table, placeholder photography for this demo" loading="lazy">
+    </div>
+    <div class="story-copy">
+      <p class="eyebrow">Our Story</p>
+      <h2>A table set with intention.</h2>
+      <p>Maison Table began with a simple idea: that a meal is more than food on a plate. It's the pause between courses, the conversation that lingers, the room that quiets around you.</p>
+      <p>We work closely with local growers and small producers, letting each season decide the menu rather than the other way around. Our kitchen favors restraint over spectacle — a few ingredients, treated with care, are almost always better than many treated carelessly.</p>
+      <p>The dining room follows the same philosophy: soft light, warm materials, and enough space between tables for a conversation to feel private. Nothing here is meant to impress at first glance — only to feel right the longer you stay.</p>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="section-heading">
+      <p class="eyebrow">Signature Menu</p>
+      <h2>Dishes worth returning for.</h2>
+      <p class="section-lead">A short, seasonal selection — six dishes that represent how we cook, from first bite to last.</p>
+    </div>
+
+    <div class="menu-grid">
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/1080/700/560" alt="Charred heirloom beets with whipped goat cheese and hazelnut" loading="lazy">
+        </div>
+        <p class="dish-category">Starter</p>
+        <div class="dish-row">
+          <h3>Charred Heirloom Beets</h3>
+          <span class="dish-price">$14</span>
+        </div>
+        <p class="dish-desc">Whipped goat cheese, toasted hazelnut, aged sherry vinegar.</p>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/1080/700/561" alt="Burrata with market tomato and basil oil" loading="lazy">
+        </div>
+        <p class="dish-category">Starter</p>
+        <div class="dish-row">
+          <h3>Burrata &amp; Market Tomato</h3>
+          <span class="dish-price">$16</span>
+        </div>
+        <p class="dish-desc">Basil oil, aged balsamic, sourdough crisp.</p>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/292/700/560" alt="Pan-seared duck breast with root vegetable purée" loading="lazy">
+        </div>
+        <p class="dish-category">Main Course</p>
+        <div class="dish-row">
+          <h3>Pan-Seared Duck Breast</h3>
+          <span class="dish-price">$34</span>
+        </div>
+        <p class="dish-desc">Root vegetable purée, cherry gastrique, thyme jus.</p>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/292/700/561" alt="Slow-braised short rib with potato dauphinoise" loading="lazy">
+        </div>
+        <p class="dish-category">Main Course</p>
+        <div class="dish-row">
+          <h3>Slow-Braised Short Rib</h3>
+          <span class="dish-price">$36</span>
+        </div>
+        <p class="dish-desc">Potato dauphinoise, glazed carrots, red wine reduction.</p>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/431/700/560" alt="Dark chocolate and sea salt tart with hazelnut crust" loading="lazy">
+        </div>
+        <p class="dish-category">Dessert</p>
+        <div class="dish-row">
+          <h3>Dark Chocolate &amp; Sea Salt Tart</h3>
+          <span class="dish-price">$12</span>
+        </div>
+        <p class="dish-desc">Hazelnut crust, crème fraîche.</p>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-image">
+          <img src="https://picsum.photos/id/431/700/561" alt="Rosemary and citrus spritz, non-alcoholic beverage" loading="lazy">
+        </div>
+        <p class="dish-category">Beverage</p>
+        <div class="dish-row">
+          <h3>Rosemary &amp; Citrus Spritz</h3>
+          <span class="dish-price">$9</span>
+        </div>
+        <p class="dish-desc">Fresh rosemary, blood orange, soda — non-alcoholic.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ WHY MAISON TABLE ============ -->
+  <section class="features" id="why">
+    <div class="section-heading">
+      <p class="eyebrow">Why Maison Table</p>
+      <h2>What stays the same, every service.</h2>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature">
+        <span class="feature-mark">01</span>
+        <h3>Seasonal Ingredients</h3>
+        <p>Menus shift with what local growers actually have to offer, not a fixed rotation.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-mark">02</span>
+        <h3>Thoughtful Preparation</h3>
+        <p>Fewer ingredients, handled with care — technique is quiet, never the point of the plate.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-mark">03</span>
+        <h3>Elegant Atmosphere</h3>
+        <p>Soft light and spaced-out tables, built for conversation rather than performance.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-mark">04</span>
+        <h3>Warm Hospitality</h3>
+        <p>Attentive service that reads the table — present when needed, invisible when not.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-heading">
+      <p class="eyebrow">Gallery</p>
+      <h2>A look inside the room.</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://picsum.photos/id/163/700/1000" alt="Table setting detail at Maison Table" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1035/700/560" alt="Wine being poured into a glass" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/312/700/560" alt="Fresh seasonal produce on a wooden board" loading="lazy">
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://picsum.photos/id/1080/1000/560" alt="Dining room at Maison Table in the evening" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/365/700/560" alt="Chef finishing a plate in the kitchen" loading="lazy">
+      </div>
+      <div class="gallery-item tall">
+        <img src="https://picsum.photos/id/431/700/1000" alt="Dessert plating detail" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION CTA ============ -->
+  <section class="reserve" id="reserve">
+    <div class="reserve-inner">
+      <p class="eyebrow eyebrow-light">Reservations</p>
+      <h2>Your table awaits.</h2>
+      <p>Reserve a table and make your next meal memorable.</p>
+
+      <form class="reserve-form" id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="res-name">Full name</label>
+            <input type="text" id="res-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="res-email">Email</label>
+            <input type="email" id="res-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" name="date" required>
+          </div>
+          <div class="form-field">
+            <label for="res-time">Time</label>
+            <input type="time" id="res-time" name="time" required>
+          </div>
+          <div class="form-field">
+            <label for="res-guests">Guests</label>
+            <select id="res-guests" name="guests" required>
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="res-notes">Notes (optional)</label>
+          <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, special occasions, seating preference..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-solid btn-wide">Make a Reservation</button>
+
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        <p class="form-disclaimer">This is a demo form. No reservation is actually made and no data is stored or sent anywhere.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-heading">
+      <p class="eyebrow">Visit Us</p>
+      <h2>Find your way to the table.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <ul class="contact-details">
+        <li>
+          <h3>Address</h3>
+          <p>128 Rue Fictive<br>Willowbrook, ON A1A 1A1<br>(Fictional location)</p>
+        </li>
+        <li>
+          <h3>Phone</h3>
+          <p><a href="tel:+15555010123">+1 (555) 501-0123</a></p>
+        </li>
+        <li>
+          <h3>Email</h3>
+          <p><a href="mailto:hello@maisontable.example">hello@maisontable.example</a></p>
+        </li>
+        <li>
+          <h3>Hours</h3>
+          <p>Tuesday – Sunday, 5:00 PM – 11:00 PM<br>Closed Mondays</p>
+        </li>
+      </ul>
+
+      <div class="map-placeholder" role="img" aria-label="Map placeholder showing the fictional location of Maison Table">
+        <div class="map-pin">📍</div>
+        <p>Map preview<br><span>Replace with a real map embed for a live client site</span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="logo footer-logo">Maison Table</p>
+      <p>A fictional restaurant &mdash; portfolio design demo.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Maison Table on Instagram (placeholder link)">Instagram</a>
+      <a href="#" aria-label="Maison Table on Facebook (placeholder link)">Facebook</a>
+      <a href="#" aria-label="Maison Table on Pinterest (placeholder link)">Pinterest</a>
+    </div>
+  </div>
+
+  <p class="footer-copy">&copy; <span id="year"></span> Maison Table. Portfolio demo — not a real business.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
